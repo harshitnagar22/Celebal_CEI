@@ -1,5 +1,0 @@
-
-Retrieval-Augmented Generation (RAG) is a technique that enhances language models by connecting them to external databases.
-It retrieves relevant information from a knowledge base and appends it to the user's prompt, allowing the language model to generate factually accurate answers.
-Vector databases are commonly used in RAG to store document embeddings and perform fast similarity search.
-Chunking is the process of breaking large documents into smaller segments to improve retrieval precision.
