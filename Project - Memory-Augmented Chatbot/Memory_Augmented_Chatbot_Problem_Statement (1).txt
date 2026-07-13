@@ -1,0 +1,127 @@
+Project Title
+Memory-Augmented Chatbot with Knowledge Graph and Hybrid RAG System
+
+1. Problem Statement
+Modern chatbots struggle with three key limitations:
+	•	Lack of long-term memory → cannot remember user preferences or past interactions
+	•	Limited reasoning over structured data → fail to utilize relationships between entities
+	•	Inability to handle both static and real-time data effectively
+This project aims to design and build an intelligent chatbot system that overcomes these limitations by integrating:
+	•	Retrieval-Augmented Generation (RAG) for static knowledge
+	•	Knowledge Graph for structured reasoning
+	•	Long-term memory for personalization
+	•	Tool-based dynamic data retrieval using LangGraph
+
+2. Objective
+To develop an end-to-end AI system that:
+	•	Ingests and processes web data
+	•	Builds a searchable knowledge base
+	•	Maintains user-specific memory
+	•	Answers queries using both static and dynamic sources
+	•	Evaluates response quality systematically
+
+3. System Overview
+The system consists of three parallel intelligence layers:
+1. Static Knowledge Layer (RAG)
+	•	Web scraping → data cleaning → chunking
+	•	Embedding generation and vector storage
+	•	Retrieval of relevant context for answering queries
+
+2. Knowledge Graph Layer
+	•	Extract entities and relationships from data
+	•	Store in graph database (e.g., Neo4j)
+	•	Enable structured and relational querying
+
+3. Dynamic Intelligence Layer (LangGraph)
+	•	Orchestrates decision-making
+	•	Routes queries to:
+	•	RAG (static knowledge)
+	•	Tools/APIs (dynamic data)
+	•	Memory (user context)
+
+4. Key Features
+1. Long-Term Memory
+	•	Stores user preferences and past interactions
+	•	Enables personalized and context-aware responses
+
+2. Hybrid Retrieval System
+	•	Combines:
+	•	Vector search (semantic)
+	•	Knowledge graph queries (structured)
+
+3. Dynamic Tool Integration
+	•	Fetches real-time data via APIs or web scraping
+	•	Enables up-to-date responses
+
+4. Context-Aware Responses
+	•	Uses:
+	•	Chat history
+	•	Retrieved knowledge
+	•	User memory
+
+5. Evaluation Framework
+	•	Evaluates RAG performance using:
+	•	Context relevance
+	•	Answer correctness
+	•	Faithfulness
+
+5. Methodology
+Step 1: Data Pipeline
+	•	Web scraping using BeautifulSoup / Scrapy
+	•	Data cleaning and preprocessing
+	•	Text chunking
+
+Step 2: Embedding & Storage
+	•	Generate embeddings
+	•	Store in vector database (FAISS/Chroma)
+
+Step 3: Knowledge Graph Construction
+	•	Entity extraction
+	•	Relationship mapping
+	•	Graph storage
+
+Step 4: RAG Pipeline
+	•	Query embedding
+	•	Similarity search
+	•	Context retrieval
+	•	LLM-based answer generation
+
+Step 5: LangGraph Workflow
+	•	Define nodes:
+	•	Model node
+	•	Memory node
+	•	RAG node
+	•	Tool node
+	•	Implement decision routing
+
+Step 6: Dynamic Tools
+	•	Integrate APIs / live data sources
+	•	Enable real-time query handling
+
+Step 7: Evaluation
+	•	Use automated metrics and LLM-based evaluation
+	•	Analyze system performance
+
+6. Tech Stack
+	•	Programming: Python
+	•	Frameworks: FastAPI
+	•	LLM Orchestration: LangGraph
+	•	Vector DB: FAISS / Chroma
+	•	Graph DB: Neo4j
+	•	Database: MongoDB / PostgreSQL
+	•	Web Scraping: BeautifulSoup / Scrapy
+
+7. Expected Outcomes
+	•	A fully functional chatbot system with:
+	•	Memory-aware responses
+	•	Structured knowledge reasoning
+	•	Real-time data handling
+	•	Demonstration of:
+	•	NLP + ML + system design skills
+	•	End-to-end pipeline development
+	•	MLOps and evaluation practices
+
+8. Conclusion
+This project demonstrates the integration of modern AI paradigms—RAG, knowledge graphs, memory systems, and tool-based reasoning—into a single unified architecture. It reflects real-world AI system design and prepares for roles in Machine Learning Engineering, AI Systems, and Applied Research.
+
+
